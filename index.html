@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Campus Lost & Found</h1>
+    <p>Lost something? Found something? Help reunite it!</p>
+  </header>
+
+  <main>
+    <section class="form-card">
+      <h2>Report an Item</h2>
+
+      <form id="itemForm">
+        <label for="itemName">Item name</label>
+        <input id="itemName" required
+          placeholder="e.g. Blue water bottle">
+
+        <label for="itemType">Report type</label>
+        <select id="itemType" required>
+          <option value="Lost">Lost Item</option>
+          <option value="Found">Found Item</option>
+        </select>
+
+        <label for="itemLocation">Location</label>
+        <input id="itemLocation" required
+          placeholder="e.g. College library">
+
+        <label for="itemContact">Contact information</label>
+        <input id="itemContact" required
+          placeholder="Email or other contact">
+
+        <button type="submit">Submit Report</button>
+      </form>
+      <p id="message" role="status"></p>
+    </section>
+
+    <section class="items-section">
+      <h2>Reported Items</h2>
+      <input id="search" type="search"
+        placeholder="Search items or locations...">
+      <div id="itemsList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Student project | DevOps Automation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
